@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #16afd8;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Nunito sans';
+  margin-top: 3vw;
+  min-height: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1%;
+  background-image: url("img/splash.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 44.4vw;
+  height: 13.3vw;
+  text-align: right;
+}
+
+.container1 {
+  position: relative;
+  display: flex;
+
+}
+
+.over {
+  position: absolute;
+  color: white;
+  font-weight: bolder;
+  left: 45%;
+  bottom: 50%;
+  padding-bottom: 3%;
+  font-size: 2vw;
+  width: 50%;
+}
+
+.name {
+  position: absolute;
+  bottom: 47%;
+  left: 74.5%;
+  color: white;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2vw;
+}
+
+.a-link {
+  position: absolute;
+  top: 80%;
+  left: 53%;
+  font-size: 0.8vw;
+  color: blue;
+  text-decoration: none;
+}
+
+.a-link:hover {
+  color: fuchsia;
+}
+
+.container2 {
+  width: 44.3vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  background-color: #0879b1;
+  color: white;
+  text-align: center;
+}
+
+.container2__colors {
+  border-right: #16afd8 thin solid;
+}
+
+.container2__mix {
+  border-right: #16afd8 thin solid;
+}
+
+.container2__gloves {
+  border-right: #16afd8 thin solid;
+}
+
+.container2__title {
+  font-size: 1vw;
+  padding: 10%;
+}
+
+.container2__img {
+  width: 55%;
+}
+
+.container2__title:hover {
+  color: #00BD96;
+  font-size: medium;
+}
+
+.container2__img:hover {
+  transform: scale(1.1);
+}
+
+.container3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  background-color: #0879b1;
+  height: 5vw;
+  width: 44.4vw;
+}
+
+form {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  gap: 4%;
+}
+
+input {
+  width: 11vw;
+  height: 1.7vw;
+  color: #ebeef02c;
+  left: 2vw;
+}
+
+select {
+  width: 3.9vw;
+  height: 1vw;
+  font-size: 0.6vw;
+  margin-top: 0.3vw;
+}
+
+button {
+  color: #5d6164a2;
+  width: 10vw;
+  height: 1.7vw;
+  border-radius: 0.5vw;
+  border: none;
+}
+
+/*TABLET*/
+@media (min-width: 820px) and (max-width: 1180px) {
+  .over {
+    left: 47%;
+    font-size: 3vw;
+    }
+
+  .name {
+    left: 67%;
+    font-size: 1.6vw;
+    }
+
+  .a-link {
+  left: 20%;
+  font-size: 1.8vw;
+  }
+
+  .container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+  }
+
+  .container2__colors {
+    border-bottom: #16afd8 thin solid;
+  }
+  
+  .container2__mix {
+    border-bottom: #16afd8 thin solid;
+  }
+  .container3 {
+  height: 18vw;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2vw;
+  }
+
+  input {
+    width: 25vw;
+  }
+
+  select {
+    width: 8vw;
+    height: 2vw;
+  }
+
+}
+
+@media (max-width: 819px) {
+
+  .over {
+    left: 47%;
+    font-size: 3vw;
+    }
+
+  .name {
+    left: 60%;
+    font-size: 2vw;
+    }
+
+  .a-link {
+  left: 20%;
+  font-size: 2vw;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+  }
+
+  .container2__title {
+    font-size: 3vw;
+    padding: 10%;
+  }
+  
+  .container2__img {
+    width: 30%;
+  }
+
+  .container2__colors {
+    border-bottom: #16afd8 thin solid;
+  }
+  
+  .container2__mix {
+    border-bottom: #16afd8 thin solid;
+  }
+
+  .container2__gloves {
+    border-bottom:  #16afd8 thin solid;
+  }
+
+  .container2__inspire {
+    border-bottom:  #16afd8 thin solid;
+  }
+
+  .container2__title:hover {
+    font-size: x-large;
+  }
+
+  .container3 {
+    height: 33vw;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.4vw;
+    }
+  
+    input {
+      width: 26vw;
+      height: 3vw;
+    }
+
+    select {
+      width: 15vw;
+      height: 3.5vw;
+      font-size: 1.8vw;
+    }
+
+    button {
+      width: 15vw;
+      height: 4vw;
+    }
+}
+
+
+
